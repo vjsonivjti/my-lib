@@ -1,3 +1,2 @@
-import { Greeter } from './Greeter';
-export { Greeter };
-export declare const updateLocation: () => void;
+import { Store } from 'redux';
+export declare const updateLocation: (store: Store) => void;

@@ -1,9 +1,6 @@
-import { Greeter } from './Greeter'
-import { useDispatch } from 'react-redux'
-export { Greeter }
-export const updateLocation = () => {
-    const dispatch = useDispatch();
-    dispatch({
+import { legacy_createStore as createStore, Store } from 'redux'
+export const updateLocation = (store: Store) => {
+    store.dispatch({
         type: 'UPDATE_LOCATION',
         payload:
         {
